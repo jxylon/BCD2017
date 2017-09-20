@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from itertools import chain
 
 
-def read_file(i: int):
+def read_file(i):
     # 文件名
     fn = ['dsjtzs_txfz_training_sample', 'dsjtzs_txfz_test_sample', 'dsjtzs_txfz_training', 'dsjtzs_txfz_test1']
     index_name = ['a1', 'a2', 'a3', 'a4']
@@ -49,7 +49,7 @@ def x_y_t(df):
     return x, y, t, label, target, squ
 
 
-def draw(x: list, y: list, t: list, label: list, squ: list):
+def draw(x, y, t, label, squ):
     count = 0
     for i in chain(range(30,60), range(2940, 2970)):
         plt.subplot(6, 10, count + 1)
