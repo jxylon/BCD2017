@@ -342,3 +342,4 @@ if __name__ == '__main__':
     df = br.read_file(2)
     x, y, t, label, target, squ = br.x_y_t(df)
     train1(x, y, t, target, label)
+    
